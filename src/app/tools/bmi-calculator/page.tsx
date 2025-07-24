@@ -217,9 +217,9 @@ export default function BMICalculator() {
 						<div className='prose max-w-none'>
 							<p className='text-gray-600 mb-4'>
 								Body Mass Index (BMI) is a measure of body fat
-								based on height and weight. It's a useful
-								screening tool but doesn't directly measure body
-								fat percentage.
+								based on height and weight. It&apos;s a useful
+								screening tool but doesn&apos;t directly measure
+								body fat percentage.
 							</p>
 							<h3 className='text-lg font-semibold mb-2'>
 								Important Notes:
@@ -230,7 +230,7 @@ export default function BMICalculator() {
 									high muscle mass
 								</li>
 								<li>
-									It doesn't account for age, gender, or
+									It doesn&apos;t account for age, gender, or
 									muscle-to-fat ratio
 								</li>
 								<li>

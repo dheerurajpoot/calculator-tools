@@ -276,9 +276,10 @@ export default function HomePage() {
 									</div>
 								</div>
 								<p className='text-gray-600 italic'>
-									"The EMI calculator is incredibly accurate
-									and helps me provide quick estimates to my
-									clients. Love the clean interface!"
+									&quot;The EMI calculator is incredibly
+									accurate and helps me provide quick
+									estimates to my clients. Love the clean
+									interface!&quot;
 								</p>
 							</CardContent>
 						</Card>
@@ -298,9 +299,9 @@ export default function HomePage() {
 									</div>
 								</div>
 								<p className='text-gray-600 italic'>
-									"The GPA converter saved me so much time
-									when applying to universities abroad. Simple
-									and reliable!"
+									&quot;The GPA converter saved me so much
+									time when applying to universities abroad.
+									Simple and reliable!&quot;
 								</p>
 							</CardContent>
 						</Card>
@@ -320,9 +321,9 @@ export default function HomePage() {
 									</div>
 								</div>
 								<p className='text-gray-600 italic'>
-									"The AdSense calculator gives me realistic
-									revenue projections. Perfect for planning my
-									content strategy!"
+									&quot;The AdSense calculator gives me
+									realistic revenue projections. Perfect for
+									planning my content strategy!&quot;
 								</p>
 							</CardContent>
 						</Card>
@@ -374,9 +375,9 @@ export default function HomePage() {
 							</CardHeader>
 							<CardContent>
 								<p className='text-gray-600'>
-									No, we don't store any personal data. All
-									calculations are performed locally in your
-									browser for complete privacy.
+									No, we don&apos;t store any personal data.
+									All calculations are performed locally in
+									your browser for complete privacy.
 								</p>
 							</CardContent>
 						</Card>

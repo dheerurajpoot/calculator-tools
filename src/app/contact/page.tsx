@@ -110,8 +110,8 @@ export default function ContactPage() {
 										</h3>
 										<p className='text-sm text-gray-600'>
 											No, all calculations are performed
-											locally in your browser. We don't
-											store any personal data.
+											locally in your browser. We
+											don&apos;t store any personal data.
 										</p>
 									</div>
 									<div>
