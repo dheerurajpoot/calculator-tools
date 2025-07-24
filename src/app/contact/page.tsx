@@ -17,7 +17,7 @@ export default function ContactPage() {
 					</h1>
 					<p className='text-xl text-gray-600 max-w-2xl mx-auto'>
 						Have questions, suggestions, or need help with our
-						calculators? We'd love to hear from you!
+						calculators? We&apos;d love to hear from you!
 					</p>
 				</div>
 
