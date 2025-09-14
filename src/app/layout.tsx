@@ -27,12 +27,12 @@ export default function RootLayout({
 			<head suppressHydrationWarning>
 				<meta
 					name='google-site-verification'
-					content='3dFjjtklPvrI81RGWHubCGvKPwP0xFOD1FcHb3tZBng'
+					content='XXXXXXXXXXXXXXXXXXXXXXXX'
 				/>
 				{/* Google Analytics Script */}
 				<script
 					async
-					src='https://www.googletagmanager.com/gtag/js?id=G-3TRBTMGL5N'
+					src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXX'
 				/>
 				<script
 					dangerouslySetInnerHTML={{
@@ -40,13 +40,13 @@ export default function RootLayout({
 							window.dataLayer = window.dataLayer || [];
 							function gtag(){dataLayer.push(arguments);}
 							gtag('js', new Date());
-							gtag('config', 'G-3TRBTMGL5N');
+							gtag('config', 'G-XXXXXXXXX');
 						`,
 					}}
 				/>
 				<script
 					async
-					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3138751846532107'
+					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXXXXXXXXXX'
 					crossOrigin='anonymous'
 				/>
 			</head>
