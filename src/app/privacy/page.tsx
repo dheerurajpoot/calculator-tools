@@ -1,15 +1,16 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { SITE_EMAIL, SITE_NAME } from "@/lib/constant";
 
 export default function PrivacyPage() {
 	return (
-		<div className='min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
+		<div className='min-h-screen mt-12 bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
 			<div className='max-w-4xl mx-auto'>
 				<div className='text-center mb-12'>
 					<h1 className='text-4xl font-bold text-gray-800 mb-6'>
 						Privacy Policy
 					</h1>
 					<p className='text-xl text-gray-600'>
-						Last updated: January 2024
+						Last updated: January 2026
 					</p>
 				</div>
 
@@ -24,7 +25,7 @@ export default function PrivacyPage() {
 									1. Information We Collect
 								</h2>
 								<p className='text-gray-600'>
-									CalcHub is designed with privacy in mind. We
+									{SITE_NAME} is designed with privacy in mind. We
 									do not collect, store, or transmit any
 									personal information or calculation data.
 									All calculations are performed locally in
@@ -134,7 +135,7 @@ export default function PrivacyPage() {
 								<p className='text-gray-600'>
 									If you have any questions about this Privacy
 									Policy, please contact us at
-									privacy@example.com.
+									{SITE_EMAIL}.
 								</p>
 							</section>
 						</div>

@@ -12,7 +12,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { SEOContent } from "@/components/seo-content";
 
 export default function PercentageCalculator() {
 	const [basicValue, setBasicValue] = useState("");
@@ -282,6 +283,71 @@ export default function PercentageCalculator() {
 						</Card>
 					</TabsContent>
 				</Tabs>
+
+				<SEOContent
+					title="Percentage Calculator"
+					description="Our free percentage calculator helps you calculate percentages, percentage increases, decreases, and changes with precision. Perfect for students, professionals, and anyone needing quick percentage calculations."
+					features={[
+						"Calculate basic percentages of any number instantly",
+						"Compute percentage increases and decreases with ease",
+						"Determine percentage change between two values",
+						"Three calculation modes for different percentage needs",
+						"Mobile-friendly interface with real-time results",
+						"100% free with no registration or limitations"
+					]}
+					benefits={[
+						{
+							title: "Academic Success",
+							description: "Perfect for students working on math problems, statistics, and academic assignments requiring percentage calculations."
+						},
+						{
+							title: "Business Analysis",
+							description: "Essential for business professionals calculating profit margins, sales growth, market share changes, and financial ratios."
+						},
+						{
+							title: "Shopping Savings",
+							description: "Calculate discounts, sale prices, and savings percentages when shopping to make informed purchasing decisions."
+						},
+						{
+							title: "Data Interpretation",
+							description: "Analyze survey results, statistical data, and research findings by converting raw numbers into meaningful percentages."
+						}
+					]}
+					faqs={[
+						{
+							question: "How do you calculate a percentage of a number?",
+							answer: "To calculate a percentage of a number, multiply the number by the percentage and divide by 100. Formula: (Number × Percentage) / 100. For example, 25% of 200 = (200 × 25) / 100 = 50."
+						},
+						{
+							question: "What's the difference between percentage increase and decrease?",
+							answer: "Percentage increase shows growth (positive result) when the new value is higher than the original. Percentage decrease shows reduction (negative result) when the new value is lower. Both use the formula: ((New - Original) / Original) × 100."
+						},
+						{
+							question: "How do you calculate percentage change?",
+							answer: "Percentage change measures the relative difference between two values. Formula: ((New Value - Original Value) / Original Value) × 100. Positive result indicates increase, negative indicates decrease."
+						},
+						{
+							question: "When should I use each calculation type?",
+							answer: "Use Basic Percentage for finding parts of wholes, Percentage Increase/Decrease for comparing values over time, and Percentage Change for measuring relative differences between any two values."
+						},
+						{
+							question: "Why are percentages useful in daily life?",
+							answer: "Percentages help us understand proportions, compare quantities, calculate discounts, analyze data trends, measure performance improvements, and make informed financial decisions in business and personal contexts."
+						}
+					]}
+					keywords={[
+						"percentage calculator",
+						"percent calculator",
+						"percentage increase calculator",
+						"percentage decrease calculator",
+						"percentage change calculator",
+						"discount calculator",
+						"percent change",
+						"percentage formula",
+						"calculate percentage",
+						"percentage difference"
+					]}
+				/>
 			</div>
 		</div>
 	);

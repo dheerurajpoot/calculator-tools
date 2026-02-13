@@ -12,7 +12,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { SEOContent } from "@/components/seo-content";
 
 export default function BMICalculator() {
 	const [weight, setWeight] = useState("");
@@ -209,42 +210,70 @@ export default function BMICalculator() {
 					)}
 				</div>
 
-				<Card className='mt-8'>
-					<CardHeader>
-						<CardTitle>About BMI</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className='prose max-w-none'>
-							<p className='text-gray-600 mb-4'>
-								Body Mass Index (BMI) is a measure of body fat
-								based on height and weight. It&apos;s a useful
-								screening tool but doesn&apos;t directly measure
-								body fat percentage.
-							</p>
-							<h3 className='text-lg font-semibold mb-2'>
-								Important Notes:
-							</h3>
-							<ul className='list-disc list-inside space-y-1 text-gray-600'>
-								<li>
-									BMI may not be accurate for athletes with
-									high muscle mass
-								</li>
-								<li>
-									It doesn&apos;t account for age, gender, or
-									muscle-to-fat ratio
-								</li>
-								<li>
-									Consult healthcare professionals for
-									comprehensive health assessment
-								</li>
-								<li>
-									BMI is just one indicator of health, not a
-									complete diagnosis
-								</li>
-							</ul>
-						</div>
-					</CardContent>
-				</Card>
+				<SEOContent
+					title="BMI Calculator"
+					description="Our free BMI calculator helps you determine your Body Mass Index to assess your weight status and health risks. Calculate your BMI instantly using metric or imperial units with our accurate and easy-to-use tool."
+					features={[
+						"Calculate BMI using both metric and imperial units",
+						"Instant health category classification (Underweight, Normal, Overweight, Obese)",
+						"Detailed BMI range information and health guidelines",
+						"Mobile-friendly responsive design for all devices",
+						"100% free with no registration required",
+						"Real-time calculations with instant results"
+					]}
+					benefits={[
+						{
+							title: "Health Assessment",
+							description: "Quickly understand your weight status and potential health risks associated with your BMI score."
+						},
+						{
+							title: "Fitness Planning",
+							description: "Use BMI results to set realistic fitness goals and track your progress over time."
+						},
+						{
+							title: "Medical Reference",
+							description: "Valuable screening tool that healthcare professionals use for initial health assessments."
+						},
+						{
+							title: "Educational Tool",
+							description: "Learn about healthy weight ranges and understand the relationship between height and weight."
+						}
+					]}
+					faqs={[
+						{
+							question: "What is BMI and how is it calculated?",
+							answer: "BMI (Body Mass Index) is calculated by dividing your weight in kilograms by your height in meters squared. The formula is: BMI = weight(kg) / height(m)². It provides a simple numeric measure of a person's thickness or thinness."
+						},
+						{
+							question: "Is BMI accurate for everyone?",
+							answer: "BMI is a general screening tool but has limitations. It may not be accurate for athletes with high muscle mass, pregnant women, children, or elderly individuals. It doesn't distinguish between muscle and fat mass."
+						},
+						{
+							question: "What are the BMI categories?",
+							answer: "Underweight: Below 18.5, Normal weight: 18.5-24.9, Overweight: 25-29.9, Obese: 30 and above. These ranges help identify potential health risks associated with weight."
+						},
+						{
+							question: "Should I rely solely on BMI for health assessment?",
+							answer: "No, BMI should be used as one tool among many. Consider consulting healthcare professionals who can evaluate body composition, waist circumference, family history, and other health factors for a comprehensive assessment."
+						},
+						{
+							question: "How often should I check my BMI?",
+							answer: "For most adults, checking BMI every 3-6 months is sufficient unless you're actively working on weight management goals. More frequent monitoring may be helpful during significant lifestyle changes."
+						}
+					]}
+					keywords={[
+						"BMI calculator",
+						"body mass index",
+						"weight calculator",
+						"health assessment",
+						"ideal weight",
+						"obesity calculator",
+						"weight status",
+						"health screening",
+						"fitness calculator",
+						"weight management"
+					]}
+				/>
 			</div>
 		</div>
 	);

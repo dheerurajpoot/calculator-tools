@@ -18,7 +18,8 @@ import {
 	SelectItem,
 	SelectTrigger,
 	SelectValue,
-} from "@/components/ui/select";
+} from "@/components/ui/select"
+import { SEOContent } from "@/components/seo-content";
 
 export default function GPAConverter() {
 	const [gpa, setGpa] = useState("");
@@ -210,64 +211,70 @@ export default function GPAConverter() {
 					)}
 				</div>
 
-				<Card className='mt-8'>
-					<CardHeader>
-						<CardTitle>Understanding GPA Scales</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className='prose max-w-none'>
-							<p className='text-gray-600 mb-4'>
-								Different educational systems use various GPA
-								scales. Our converter helps you translate your
-								grades between these systems.
-							</p>
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-								<div>
-									<h3 className='text-lg font-semibold mb-2'>
-										Common Scales:
-									</h3>
-									<ul className='list-disc list-inside space-y-1 text-gray-600'>
-										<li>
-											<strong>4.0 Scale:</strong> Most
-											common in US universities
-										</li>
-										<li>
-											<strong>5.0 Scale:</strong> Weighted
-											GPA with honors/AP classes
-										</li>
-										<li>
-											<strong>10.0 Scale:</strong> Common
-											in Indian institutions
-										</li>
-										<li>
-											<strong>Percentage:</strong> Direct
-											percentage grades
-										</li>
-									</ul>
-								</div>
-								<div>
-									<h3 className='text-lg font-semibold mb-2'>
-										Important Notes:
-									</h3>
-									<ul className='list-disc list-inside space-y-1 text-gray-600'>
-										<li>Conversions are approximate</li>
-										<li>
-											Different institutions may have
-											variations
-										</li>
-										<li>
-											Check with target institution for
-											exact requirements
-										</li>
-										<li>
-											Some scales may not convert directly
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</CardContent>
-				</Card>
+				<SEOContent
+					title="GPA Calculator"
+					description="Our free GPA converter helps students convert grades between different educational systems including 4.0 scale, 5.0 scale, 10.0 scale, and percentage formats. Perfect for international students and academic transfers."
+					features={[
+						"Convert between 4.0, 5.0, 10.0, and percentage scales",
+						"Support for weighted and unweighted GPA systems",
+						"Instant conversion results with grade equivalencies",
+						"Helpful for international student applications",
+						"Mobile-friendly interface for students on-the-go",
+						"100% free with no registration required"
+					]}
+					benefits={[
+						{
+							title: "International Applications",
+							description: "Convert your grades to match the requirements of universities in different countries and educational systems."
+						},
+						{
+							title: "Academic Transfers",
+							description: "Easily convert GPA when transferring between institutions with different grading systems and scales."
+						},
+						{
+							title: "Scholarship Applications",
+							description: "Meet specific GPA requirements for scholarships and financial aid programs across different grading standards."
+						},
+						{
+							title: "Grade Understanding",
+							description: "Better understand how your grades compare across different educational systems and international standards."
+						}
+					]}
+					faqs={[
+						{
+							question: "How accurate are GPA conversions between different scales?",
+							answer: "Conversions provide approximate equivalencies since different institutions may have varying standards. The calculator uses standard conversion formulas, but always verify with your target institution for exact requirements."
+						},
+						{
+							question: "What's the difference between weighted and unweighted GPA?",
+							answer: "Unweighted GPA treats all courses equally (typically on a 4.0 scale), while weighted GPA gives extra points for honors, AP, or IB courses (often on a 5.0 scale). Weighted GPA can exceed 4.0."
+						},
+						{
+							question: "Which GPA scale is used in different countries?",
+							answer: "US typically uses 4.0 scale, India often uses 10.0 scale, UK uses percentage or letter grades, and many European countries use ECTS grading. Our converter handles these major systems."
+						},
+						{
+							question: "How do I convert my percentage to GPA?",
+							answer: "Enter your percentage grade and select Percentage as the source scale, then choose your target GPA scale (4.0, 5.0, or 10.0). The calculator will provide the equivalent GPA value."
+						},
+						{
+							question: "Should I convert my GPA for every application?",
+							answer: "Check each institution's requirements. Some prefer original grades with explanation, others require converted GPA. When in doubt, provide both original and converted grades for complete transparency."
+						}
+					]}
+					keywords={[
+						"GPA calculator",
+						"GPA converter",
+						"grade point average",
+						"4.0 scale converter",
+						"10.0 scale GPA",
+						"percentage to GPA",
+						"international GPA conversion",
+						"student grade converter",
+						"academic transfer calculator",
+						"university application GPA"
+					]}
+				/>
 			</div>
 		</div>
 	);

@@ -1,0 +1,7 @@
+export const SITE_URL = 'https://calchub.deelzo.com'
+export const SITE_NAME = 'CalcHub'
+export const SITE_TITLE = 'CalcHub - All Professional Calculators'
+export const SITE_DESCRIPTION = 'Free online tools for age calculation and EMI calculation with accurate results. CalcHub'
+export const SITE_AUTHOR = 'Deelzo'
+export const SITE_EMAIL = 'evtnorg@gmail.com'
+export const SITE_PHONE = '+1 (682)4640435'

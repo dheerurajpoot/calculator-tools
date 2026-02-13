@@ -6,10 +6,11 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { SITE_EMAIL, SITE_PHONE } from "@/lib/constant";
 
 export default function ContactPage() {
 	return (
-		<div className='min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
+		<div className='min-h-screen mt-12 bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
 			<div className='max-w-4xl mx-auto'>
 				<div className='text-center mb-12'>
 					<h1 className='text-4xl font-bold text-gray-800 mb-6'>
@@ -21,7 +22,7 @@ export default function ContactPage() {
 					</p>
 				</div>
 
-				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+				<div className='grid gap-8'>
 					<div className='space-y-6'>
 						<Card>
 							<CardHeader>
@@ -38,7 +39,7 @@ export default function ContactPage() {
 									<div>
 										<div className='font-medium'>Email</div>
 										<div className='text-gray-600'>
-											support@calchub.com
+											{SITE_EMAIL}
 										</div>
 									</div>
 								</div>
@@ -49,7 +50,7 @@ export default function ContactPage() {
 									<div>
 										<div className='font-medium'>Phone</div>
 										<div className='text-gray-600'>
-											+1 (555) 123-4567
+											{SITE_PHONE}
 										</div>
 									</div>
 								</div>

@@ -11,7 +11,8 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/label"
+import { SEOContent } from "@/components/seo-content";
 
 export default function AgeCalculator() {
 	const [birthDate, setBirthDate] = useState("");
@@ -80,7 +81,7 @@ export default function AgeCalculator() {
 					</p>
 				</div>
 
-				<div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
+				<div className='grid grid-cols-1 pb-4 lg:grid-cols-2 gap-8'>
 					<Card>
 						<CardHeader>
 							<CardTitle>Enter Your Birth Date</CardTitle>
@@ -168,38 +169,70 @@ export default function AgeCalculator() {
 					)}
 				</div>
 
-				<Card className='mt-8'>
-					<CardHeader>
-						<CardTitle>How to Use the Age Calculator</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className='prose max-w-none'>
-							<p className='text-gray-600 mb-4'>
-								Our age calculator helps you determine your
-								exact age in years, months, and days. Simply
-								enter your birth date and get instant results.
-							</p>
-							<h3 className='text-lg font-semibold mb-2'>
-								Features:
-							</h3>
-							<ul className='list-disc list-inside space-y-1 text-gray-600'>
-								<li>
-									Calculate exact age in years, months, and
-									days
-								</li>
-								<li>
-									View total days, weeks, and months lived
-								</li>
-								<li>
-									Accurate calculations considering leap years
-								</li>
-								<li>
-									Easy-to-use interface with instant results
-								</li>
-							</ul>
-						</div>
-					</CardContent>
-				</Card>
+				<SEOContent
+					title="Age Calculator"
+					description="Our free age calculator helps you determine your exact age in years, months, days, hours, and minutes. Calculate your precise age from your birth date with our accurate and easy-to-use online tool."
+					features={[
+						"Calculate exact age in years, months, and days format",
+						"View total days, weeks, and months lived since birth",
+						"Accurate calculations that account for leap years",
+						"Works for any date including future dates for planning",
+						"Mobile-responsive design for all devices",
+						"Instant results with no registration required"
+					]}
+					benefits={[
+						{
+							title: "Personal Milestones",
+							description: "Track important life events and milestones by calculating exact ages for birthdays, anniversaries, and special occasions."
+						},
+						{
+							title: "Legal Documentation",
+							description: "Verify age requirements for official documents, applications, and eligibility criteria that need precise age verification."
+						},
+						{
+							title: "Health Records",
+							description: "Maintain accurate medical and health records with precise age calculations for better healthcare management."
+						},
+						{
+							title: "Educational Planning",
+							description: "Determine school admission eligibility, grade levels, and educational program requirements based on exact age."
+						}
+					]}
+					faqs={[
+						{
+							question: "How accurate is the age calculation?",
+							answer: "Our calculator provides highly accurate results by considering exact dates, months, and leap years. The calculations account for the actual number of days in each month and leap year occurrences."
+						},
+						{
+							question: "Can I calculate age for future dates?",
+							answer: "Yes, you can enter any future date to calculate upcoming ages for planning purposes like retirement, milestone celebrations, or project timelines."
+						},
+						{
+							question: "Why does my age show different on different calculators?",
+							answer: "Differences may occur due to varying calculation methods, time zones, or whether leap years are properly accounted for. Our calculator uses precise date arithmetic for maximum accuracy."
+						},
+						{
+							question: "How is age calculated exactly?",
+							answer: "Age is calculated by comparing your birth date with the current date, counting complete years first, then remaining months, and finally the leftover days. The system accounts for varying month lengths and leap years."
+						},
+						{
+							question: "Can I calculate age for someone else?",
+							answer: "Yes, you can calculate anyone's age by entering their birth date. This is useful for family planning, event coordination, or determining eligibility requirements for others."
+						}
+					]}
+					keywords={[
+						"age calculator",
+						"birthday calculator",
+						"date calculator",
+						"how old am I",
+						"age finder",
+						"birth date calculator",
+						"exact age calculator",
+						"age in years",
+						"age verification",
+						"date difference calculator"
+					]}
+				/>
 			</div>
 		</div>
 	);

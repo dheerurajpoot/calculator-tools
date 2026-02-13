@@ -4,16 +4,16 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { SITE_AUTHOR, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/constant";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Calculator Tools Hub - Free Online Calculators",
-	description:
-		"Professional calculator tools including age, EMI, percentage, BMI, GPA, and AdSense revenue calculators. Fast, accurate, and free to use.",
+	title: SITE_TITLE,
+	description: SITE_DESCRIPTION,	
 	keywords:
 		"calculator, online calculator, free calculator, age calculator, EMI calculator, BMI calculator, GPA calculator, percentage calculator, AdSense revenue calculator",
-	authors: [{ name: "Calculator Tools Hub" }],
+	authors: [{ name: SITE_AUTHOR }],
 	robots: "index, follow",
 };
 
@@ -25,10 +25,13 @@ export default function RootLayout({
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<head suppressHydrationWarning>
+
+				{/* Search Console Verification Code  */}
 				<meta
 					name='google-site-verification'
 					content='XXXXXXXXXXXXXXXXXXXXXXXX'
 				/>
+
 				{/* Google Analytics Script */}
 				<script
 					async
@@ -44,6 +47,8 @@ export default function RootLayout({
 						`,
 					}}
 				/>
+
+				{/* Google Adsense code */}
 				<script
 					async
 					src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXXXXXXXXXXX'

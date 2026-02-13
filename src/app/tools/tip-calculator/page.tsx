@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Slider } from "@/components/ui/slider"
+import { SEOContent } from "@/components/seo-content"
 
 export default function TipCalculator() {
   const [billAmount, setBillAmount] = useState("")
@@ -171,6 +172,71 @@ export default function TipCalculator() {
             </Card>
           )}
         </div>
+
+        <SEOContent
+          title="Tip Calculator"
+          description="Our free tip calculator helps you calculate restaurant tips, service charges, and split bills accurately. Perfect for dining out, hair salons, delivery services, and any tipping situation."
+          features={[
+            "Calculate tips for any bill amount with custom percentages",
+            "Split bills evenly among multiple people with tip included",
+            "Quick preset tip buttons for common percentages (10%, 15%, 18%, 20%, 25%)",
+            "Interactive slider for precise tip percentage adjustment",
+            "Mobile-friendly design for use at restaurants and on-the-go",
+            "Instant calculations with detailed breakdown of all amounts"
+          ]}
+          benefits={[
+            {
+              title: "Restaurant Dining",
+              description: "Calculate appropriate tips for restaurant meals, ensuring fair compensation for service staff while managing your budget effectively."
+            },
+            {
+              title: "Group Payments",
+              description: "Easily split bills among friends and family with accurate tip distribution, avoiding awkward calculations at the table."
+            },
+            {
+              title: "Service Industries",
+              description: "Perfect for calculating tips for hairdressers, delivery drivers, taxi services, and other service professionals."
+            },
+            {
+              title: "Budget Planning",
+              description: "Plan your dining expenses by knowing exact tip amounts beforehand, helping you stay within your entertainment budget."
+            }
+          ]}
+          faqs={[
+            {
+              question: "What is the standard tipping percentage?",
+              answer: "Standard tipping varies by service type: 15-20% for restaurants, 10-15% for delivery services, 15-20% for hair salons, and 10-15% for taxi services. These percentages can vary based on service quality and local customs."
+            },
+            {
+              question: "How do I calculate tip per person when splitting a bill?",
+              answer: "Enter the total bill amount, select your desired tip percentage, enter the number of people, and our calculator will show both the total tip amount and individual share including tip for each person."
+            },
+            {
+              question: "Should I tip on the pre-tax or post-tax amount?",
+              answer: "Standard practice is to tip on the pre-tax subtotal amount. However, some people prefer to tip on the total including tax, especially for larger bills. The choice depends on personal preference and local customs."
+            },
+            {
+              question: "When is it appropriate to tip less or more than standard?",
+              answer: "Tip less (10-15%) for poor service, standard amount (15-20%) for good service, and more (20-25%) for exceptional service. Consider factors like service quality, complexity of order, and special requests."
+            },
+            {
+              question: "Do I need to tip for takeout or delivery orders?",
+              answer: "Yes, it's customary to tip 10-15% for delivery services. For takeout, a smaller tip (5-10%) or rounding up is appreciated but not always expected. Consider the service effort involved."
+            }
+          ]}
+          keywords={[
+            "tip calculator",
+            "restaurant tip calculator",
+            "bill split calculator",
+            "service tip calculator",
+            "dining tip calculator",
+            "tip percentage calculator",
+            "restaurant bill calculator",
+            "tip split calculator",
+            "service charge calculator",
+            "gratuity calculator"
+          ]}
+        />
       </div>
     </div>
   )

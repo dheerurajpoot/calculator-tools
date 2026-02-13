@@ -6,6 +6,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
+import { SITE_NAME } from "@/lib/constant";
 
 export default function AboutPage() {
 	const features = [
@@ -36,11 +37,11 @@ export default function AboutPage() {
 	];
 
 	return (
-		<div className='min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
+		<div className='min-h-screen mt-12 bg-gradient-to-br from-slate-50 to-blue-50 py-12 px-4'>
 			<div className='max-w-4xl mx-auto'>
 				<div className='text-center mb-12'>
 					<h1 className='text-4xl font-bold text-gray-800 mb-6'>
-						About CalcHub
+						About {SITE_NAME}
 					</h1>
 					<p className='text-xl text-gray-600 max-w-2xl mx-auto'>
 						Your trusted destination for professional calculator
@@ -77,7 +78,7 @@ export default function AboutPage() {
 					<CardContent>
 						<div className='prose max-w-none'>
 							<p className='text-gray-600 mb-4'>
-								At CalcHub, we believe that everyone should have
+								At {SITE_NAME}, we believe that everyone should have
 								access to reliable calculation tools without the
 								hassle of complex software or expensive
 								subscriptions. Our mission is to provide free,
@@ -95,7 +96,7 @@ export default function AboutPage() {
 								latest mathematical standards.
 							</p>
 							<h3 className='text-lg font-semibold mb-2 text-gray-800'>
-								Why Choose CalcHub?
+								Why Choose {SITE_NAME}?
 							</h3>
 							<ul className='list-disc list-inside space-y-1 text-gray-600'>
 								<li>100% free to use with no hidden charges</li>

@@ -11,7 +11,8 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/label"
+import { SEOContent } from "@/components/seo-content";
 
 export default function AdSenseCalculator() {
 	const [pageViews, setPageViews] = useState("");
@@ -171,72 +172,70 @@ export default function AdSenseCalculator() {
 					)}
 				</div>
 
-				<Card className='mt-8'>
-					<CardHeader>
-						<CardTitle>AdSense Revenue Factors</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className='prose max-w-none'>
-							<p className='text-gray-600 mb-4'>
-								AdSense revenue depends on several factors. Our
-								calculator provides estimates based on your
-								input metrics.
-							</p>
-							<div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-								<div>
-									<h3 className='text-lg font-semibold mb-2'>
-										Key Factors:
-									</h3>
-									<ul className='list-disc list-inside space-y-1 text-gray-600'>
-										<li>
-											<strong>Traffic Quality:</strong>{" "}
-											Organic traffic typically performs
-											better
-										</li>
-										<li>
-											<strong>Niche:</strong> Finance,
-											insurance, and tech have higher CPCs
-										</li>
-										<li>
-											<strong>Geography:</strong> Traffic
-											from developed countries earns more
-										</li>
-										<li>
-											<strong>Ad Placement:</strong>{" "}
-											Above-the-fold ads perform better
-										</li>
-										<li>
-											<strong>Seasonality:</strong> Q4
-											typically has higher rates
-										</li>
-									</ul>
-								</div>
-								<div>
-									<h3 className='text-lg font-semibold mb-2'>
-										Optimization Tips:
-									</h3>
-									<ul className='list-disc list-inside space-y-1 text-gray-600'>
-										<li>
-											Focus on high-quality, original
-											content
-										</li>
-										<li>Optimize ad placement and sizes</li>
-										<li>Target high-value keywords</li>
-										<li>Improve website loading speed</li>
-										<li>Use responsive ad units</li>
-									</ul>
-								</div>
-							</div>
-							<p className='text-sm text-gray-500 mt-4'>
-								<strong>Disclaimer:</strong> These are estimates
-								only. Actual earnings may vary significantly
-								based on numerous factors including content
-								quality, audience demographics, and market
-								conditions.
-							</p>
-						</div>
-					</CardContent>
-				</Card>
+				<SEOContent
+					title="AdSense Revenue Calculator"
+					description="Our free AdSense revenue calculator helps publishers estimate potential earnings from Google AdSense. Calculate daily, monthly, and yearly revenue projections based on page views, CTR, and CPC metrics."
+					features={[
+						"Estimate daily, monthly, and yearly AdSense revenue",
+						"Calculate based on page views, CTR, and CPC inputs",
+						"Understand key factors affecting AdSense earnings",
+						"Optimize content strategy for better monetization",
+						"Mobile-friendly interface for publishers on-the-go",
+						"100% free with no registration required"
+					]}
+					benefits={[
+						{
+							title: "Revenue Planning",
+							description: "Plan your content strategy and business decisions based on realistic revenue projections and earning potential."
+						},
+						{
+							title: "Performance Optimization",
+							description: "Identify which metrics to improve for maximum AdSense earnings and content monetization effectiveness."
+						},
+						{
+							title: "Niche Selection",
+							description: "Understand which content niches and topics typically generate higher CPC rates and better monetization."
+						},
+						{
+							title: "Growth Strategy",
+							description: "Set realistic traffic and revenue goals based on industry benchmarks and calculated projections."
+						}
+					]}
+					faqs={[
+						{
+							question: "What is a realistic CTR for AdSense?",
+							answer: "Typical CTR ranges from 0.5% to 3% depending on niche, content quality, and audience engagement. High-quality content in profitable niches like finance or insurance can achieve higher CTRs."
+						},
+						{
+							question: "What CPC should I expect for my niche?",
+							answer: "CPC varies widely by niche: Finance ($2-5), Insurance ($3-8), Legal ($2-6), Technology ($1-3), Health ($1-2), General content ($0.20-1.00). Use industry benchmarks as starting points."
+						},
+						{
+							question: "How many page views do I need to make $100/month?",
+							answer: "This depends on your CTR and CPC. With average metrics (1.5% CTR, $0.50 CPC), you'd need approximately 13,333 page views per month, or about 444 daily page views."
+						},
+						{
+							question: "What factors most impact AdSense earnings?",
+							answer: "Top factors include: content niche (affects CPC), traffic quality and source, ad placement optimization, page layout, content relevance to ads, and audience demographics."
+						},
+						{
+							question: "How can I improve my AdSense revenue?",
+							answer: "Focus on high-quality, original content in profitable niches, optimize ad placement above the fold, improve page loading speed, increase user engagement, and target high-value keywords."
+						}
+					]}
+					keywords={[
+						"AdSense calculator",
+						"AdSense revenue calculator",
+						"Google AdSense earnings",
+						"ad revenue calculator",
+						"CPC calculator",
+						"CTR calculator",
+						"website monetization",
+						"publisher earnings",
+						"ad income calculator",
+						"content monetization"
+					]}
+				/>
 			</div>
 		</div>
 	);

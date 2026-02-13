@@ -11,7 +11,8 @@ import {
 	CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Label } from "@/components/ui/label"
+import { SEOContent } from "@/components/seo-content";
 
 export default function EMICalculator() {
 	const [principal, setPrincipal] = useState("");
@@ -169,32 +170,70 @@ export default function EMICalculator() {
 					)}
 				</div>
 
-				<Card className='mt-8'>
-					<CardHeader>
-						<CardTitle>About EMI Calculator</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className='prose max-w-none'>
-							<p className='text-gray-600 mb-4'>
-								EMI (Equated Monthly Installment) is the fixed
-								amount you pay every month towards your loan
-								repayment. Our calculator uses the standard EMI
-								formula to provide accurate results.
-							</p>
-							<h3 className='text-lg font-semibold mb-2'>
-								Formula Used:
-							</h3>
-							<p className='text-gray-600 mb-4'>
-								EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]
-							</p>
-							<p className='text-sm text-gray-500'>
-								Where P = Principal loan amount, R = Monthly
-								interest rate, N = Number of monthly
-								installments
-							</p>
-						</div>
-					</CardContent>
-				</Card>
+				<SEOContent
+					title="EMI Calculator"
+					description="Our free EMI calculator helps you calculate your monthly loan installments with precision. Plan your finances effectively by determining exact EMI amounts, total interest, and repayment schedules for home loans, car loans, and personal loans."
+					features={[
+						"Calculate accurate monthly EMI for any loan amount",
+						"View total interest payable and overall loan cost",
+						"Compare different loan tenures and interest rates",
+						"Supports home loans, car loans, and personal loans",
+						"Instant calculations with detailed repayment breakdown",
+						"100% free with no hidden charges or registration"
+					]}
+					benefits={[
+						{
+							title: "Financial Planning",
+							description: "Plan your monthly budget effectively by knowing exact EMI amounts before taking any loan."
+						},
+						{
+							title: "Loan Comparison",
+							description: "Compare different loan options by varying interest rates and tenure to find the best deal."
+						},
+						{
+							title: "Interest Savings",
+							description: "Understand how prepayments can reduce total interest and shorten loan tenure significantly."
+						},
+						{
+							title: "Decision Making",
+							description: "Make informed borrowing decisions with clear understanding of total loan costs and monthly obligations."
+						}
+					]}
+					faqs={[
+						{
+							question: "What is EMI and how is it calculated?",
+							answer: "EMI (Equated Monthly Installment) is the fixed amount you pay every month towards loan repayment. It includes both principal and interest components. The formula is: EMI = [P × R × (1+R)^N] / [(1+R)^N - 1] where P is principal, R is monthly interest rate, and N is number of months."
+						},
+						{
+							question: "How does interest rate affect my EMI?",
+							answer: "Higher interest rates increase your EMI amount and total interest payable. Even small changes in interest rate can significantly impact your monthly payment and overall loan cost."
+						},
+						{
+							question: "What is the impact of loan tenure on EMI?",
+							answer: "Longer tenure reduces monthly EMI but increases total interest paid over the loan period. Shorter tenure means higher EMIs but lesser total interest and faster debt freedom."
+						},
+						{
+							question: "Can I prepay my loan to reduce interest?",
+							answer: "Yes, most lenders allow prepayment either partially or fully. Prepayment reduces the outstanding principal, which decreases future interest calculations and can shorten your loan tenure."
+						},
+						{
+							question: "What factors should I consider before taking a loan?",
+							answer: "Consider your monthly income, existing obligations, interest rates, loan tenure, processing fees, and your ability to handle EMI payments comfortably. Also factor in potential rate changes for floating rate loans."
+						}
+					]}
+					keywords={[
+						"EMI calculator",
+						"loan calculator",
+						"home loan EMI",
+						"car loan calculator",
+						"personal loan EMI",
+						"monthly installment",
+						"loan repayment",
+						"interest calculator",
+						"loan planning",
+						"financial planning"
+					]}
+				/>
 			</div>
 		</div>
 	);
